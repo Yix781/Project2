@@ -1,0 +1,63 @@
+Object Oriented Analysis and Design
+Created by Yixuan Dong
+
+Analysis:
+
+    Domains:
+        Boat
+        BoatType
+        Fleet
+
+    Function Point:
+        Select menu commands
+        Print boat inventory
+        Add a boat
+        Remove a boat
+        Request permission to spend money on a boat
+        Exit program
+
+    Scenario:
+        Program start with a CSV file name argument
+        Line parsed into a Boat object
+        All boat object store in the arraylist fleet
+        Serialized into db
+        Menu loop begins
+        User performs operations
+        Exit program
+
+
+Design:
+
+    Classes and Objects:
+        Boat class
+        Main class
+        Boat object
+
+    Data:
+        Boat:
+            type (BoatType)
+            name (String)
+            year (int)
+            model (String)
+            length (double)
+            purchasePrice (double)
+            expenses (double)
+            All fields are privet
+
+    Methods:
+        Boat:
+            Constructor
+            toString
+            setter
+            getter
+
+        Main:
+            loadFromCSV
+            printInventory
+            addBoat
+            removeBoat
+            requestSpending
+            menuLoop
+            main
+
+
